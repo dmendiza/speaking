@@ -6,11 +6,15 @@
 
 Douglas Mendizábal
 
+* OpenStack Developer - [https://launchpad.net/~dougmendizabal](https://launchpad.net/~dougmendizabal)
+
+    * Core Developer for Barbican
+
+* IRC - redrobot on freenode
+
+* Twitter - [@elrobotrojo](https://twitter.com/elrobotrojo)
+
 * GitHub - [https://github.com/dmend](https://github.com/dmend)
-
-* CloudKeep - [https://github.com/cloudkeep](https://github.com/cloudkeep)
-
-* Twitter - @dev_doug
 
 ---
 
@@ -29,10 +33,11 @@ How do you make a website?
     <html lang="en">
         <head>
             <title>My first webpage</title>
-            <link rel="stylesheet" href="style.css" />
+            <link rel="stylesheet" href="style.css">
         </head>
         <body>
             <h1>Hello World!</h1>
+            <script src="main.js" type="text/javascript"></script>
         </body>
     </html>
 
@@ -42,6 +47,8 @@ How do you make a website?
 
     !css
     h1 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 2em;
         font-weight: bold;
     }
 
@@ -53,7 +60,8 @@ How do you make a website?
 
     !javascript
     (function(){
-        alert("Hello World!");
+        var hello = "Hello World!";
+        alert(hello);
     })();
 
 ![Hello JS](hello_js.jpg)
@@ -62,11 +70,11 @@ How do you make a website?
 
 # Serve your page!
 
+![Client and Server](client_server.jpg)
+
 * Register a domain (.com, .net, .bike, .tattoo, etc)
 * Configure your web server (Apache, Nginx, etc.) to serve a directory
 * Point DNS to your Server IP
-
-![Client and Server](client_server.jpg)
 
 ---
 
@@ -74,7 +82,7 @@ How do you make a website?
 
     !bash
     $ tree
-    /var/www/html 
+    /var/www/html
     .
     ├── about.html
     ├── index.html
@@ -106,14 +114,9 @@ URLs
 
 “Django is a high-level Python Web Framework that encourages rapid development and clean, pragmatic design.”
 
+![Django](http://www.gaggl.com/wp-content/uploads/2013/11/python-django.png)
+
 * [https://www.djangoproject.com/](https://www.djangoproject.com/)
-
-## It’s not MVC, it’s…
-![MTV](http://i.imgur.com/sOr5T5w.png)
-
-* Models
-* Templates (Views)
-* Views (Controllers)
 
 ---
 
@@ -130,6 +133,25 @@ URLs
 * Admin Interface
 * Authentication
 * Development Web Server
+
+---
+
+# Projects and Apps, oh my!
+
+* Projects - Python package that contains all the settings for an instance
+    of django.
+
+* Apps - Web application that does someting. e.g. A blog, an bulletin board,
+    database of public records, etc.
+
+---
+
+# It’s not MVC, it’s…
+![MTV](http://i.imgur.com/sOr5T5w.png)
+
+* Models
+* Templates (Views)
+* Views (Controllers)
 
 ---
 
@@ -163,7 +185,7 @@ Can be extended with __Middleware__
 
 # Installing Django
 
-Latest version 1.6.2 was released on Feb 2, 2014
+Latest version 1.6.5 was released on May 14, 2014
 
     !bash
     $ pip install django
@@ -206,6 +228,8 @@ Latest version 1.6.2 was released on Feb 2, 2014
     │   └── views.py
     └── manage.py
 
+* Add app "inventory" to INSTALLED_APPS in settings.py
+
 ---
 
 # URLConf
@@ -216,11 +240,11 @@ Latest version 1.6.2 was released on Feb 2, 2014
         !python
         from django.conf.urls import patterns, include, url
         from django.contrib import admin
-    
+
         admin.autodiscover()
 
         urlpatterns = patterns('',
-            # http://bookstore.com
+            # http://bookstore.com/
             url(r'^$', 'inventory.views.home'),
             # http://bookstore.com/book/12345
             url(r'^book/(\d+)/$', 'inventory.views.detail'),
@@ -323,15 +347,17 @@ Latest version 1.6.2 was released on Feb 2, 2014
 		<!DOCTYPE html>
 		<html>
 		<head>
-			<title>Book Detail</title>
+			<title>{% block title %}Book Detail{% endblock %}</title>
 		</head>
 		<body>
+            {% block content %}
 		    <h1>{{ book.title }}</h1>
             {% if book.release_date %}
 		        <p>Released on  {{ book.release_date }}.</p>
             {% endif %}
+            {% endblock %}
 		</body>
-		</html> 
+		</html>
 
 Not limited to HTML
 
@@ -342,7 +368,7 @@ Not limited to HTML
 * Templates are reusable
 
 		!python
-		{% extends "base.html" %} 
+		{% extends "base.html" %}
 
 		{% block title %}
 		The current time
@@ -438,14 +464,6 @@ Not limited to HTML
 ---
 
 # Demo
-
----
-
-# New in 1.6
-
-* Better Default Templates
-* Improved Transaction Management - breaking change
-* Persistent Database Connections
 
 ---
 
