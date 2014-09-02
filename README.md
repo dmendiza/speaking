@@ -8,7 +8,7 @@ Slide decks for talks I've done.
     - Slides: http://dmend.github.io/speaking/django_zero_to_hero/presentation.html
 
 * Django
-    - March 20, 2014 at San Antonio
+    - March 20, 2014 at San Antonio Web Development Group
     - Slides: http://dmend.github.io/speaking/django_webdev/presentation.html
     - Video: https://www.youtube.com/watch?v=oEe_3Z6kEJ0
 
