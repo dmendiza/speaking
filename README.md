@@ -15,3 +15,7 @@ Slide decks for talks I've done.
 * Intro to GPG and the Trusted Web 
     - February 24, 2014 at rax.io conference
     - Slides: http://dmend.github.io/speaking/gpg_tech_talk/presentation.html
+
+* Intro to Python
+    - April 16, 2013 at Alamo City Python Group
+    - Slides: http://dmend.github.io/speaking/intro_python/presentation.html
