@@ -12,9 +12,17 @@ Slide decks for talks I've done.
     - Slides: http://dmend.github.io/speaking/django_webdev/presentation.html
     - Video: https://www.youtube.com/watch?v=oEe_3Z6kEJ0
 
+* Django Zero to Hero
+    - March 6, 2014 at Alamo City Python Group
+    - Slides: http://dmend.github.io/speaking/django_zero_to_hero/presentation.html
+
 * Intro to GPG and the Trusted Web 
-    - February 24, 2014 at rax.io conference
+    - February 24, 2014 at rax.io
     - Slides: http://dmend.github.io/speaking/gpg_tech_talk/presentation.html
+
+* Intro to Django
+    - June 11, 2013 at Alamo City Python Group
+    - Slides: http://dmend.github.io/speaking/intro_django/presentation.html
 
 * Intro to Python
     - April 16, 2013 at Alamo City Python Group
