@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Alamo City Python Group Intro&nbsp;to&nbsp;Django</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="theme/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="theme/css/screen.css">
+    
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="theme/js/slides.js"></script>
+    
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Alamo City Python Group Intro&nbsp;to&nbsp;Django</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>About Me</h1></header>
+            
+            
+            <section><p>Douglas Mendizabal</p>
+<ul>
+<li>
+<p>GitHub - <a href="https://github.com/dmend">https://github.com/dmend</a></p>
+</li>
+<li>
+<p>CloudKeep - <a href="https://github.com/cloudkeep">https://github.com/cloudkeep</a></p>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Web Development</h1></header>
+            
+            
+            <section><p>HTML + CSS + JavaScript = Magic!</p>
+<h2>Tools</h2>
+<ul>
+<li>Chrome Developer Tools</li>
+<li>Firebug for Firefox - <a href="http://getfirebug.com/">http://getfirebug.com/</a></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Django</h1></header>
+            
+            
+            <section><p>“Django is a high-level Python Web Framework that encourages rapid development and clean, pragmatic design.”</p>
+<ul>
+<li><a href="https://www.djangoproject.com/">https://www.djangoproject.com/</a></li>
+</ul>
+<h2>It’s not MVC, it’s…</h2>
+<p><img alt="MTV" src="http://i.imgur.com/sOr5T5w.png" /></p>
+<ul>
+<li>Models</li>
+<li>Templates (Views)</li>
+<li>Views (Controllers)</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Django</h1></header>
+            
+            
+            <section><h2>“Elegant URL design”</h2>
+<ul>
+<li>Uses regular expressions for url matching</li>
+</ul>
+<h2>Built-in ORM</h2>
+<ul>
+<li>SQL: Postgres, MySQL, SQLite, etc.</li>
+</ul>
+<h2>Everything AND the Kitchen Sink!</h2>
+<ul>
+<li>Admin Interface</li>
+<li>Authentication</li>
+<li>Development Web Server</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Request Handling</h1></header>
+            
+            
+            <section><p><img alt="Django Flow" src="http://i.imgur.com/Lh1H9tZ.jpg" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Request Handling</h1></header>
+            
+            
+            <section><ul>
+<li>Request is handled by the server</li>
+<li>Django URL configuration routes the request to the view</li>
+<li>View renders the response</li>
+</ul>
+<p>Can be extended with Middleware</p>
+<ul>
+<li>Authentication/Authorization</li>
+<li>Caching</li>
+<li>CSRF protection</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>URLConf</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://www.w3.org/Provider/Style/URI.html">Cool URIs don’t change!</a></li>
+<li>Uses Regular Expressions for URL matching</li>
+<li>You can pass regex groups as parameters to your view<div class="highlight"><pre><span class="lineno">1</span> <span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">,</span>
+<span class="lineno">2</span>     <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^home/$&#39;</span><span class="p">,</span> <span class="s">&#39;app.views.home&#39;</span><span class="p">),</span>
+<span class="lineno">3</span>     <span class="p">(</span><span class="s">r&#39;^book/(?P&lt;book_id&gt;\d{5})/$&#39;</span><span class="p">,</span> 
+<span class="lineno">4</span>      <span class="s">&#39;books.views.book_detail&#39;</span><span class="p">),</span>
+<span class="lineno">5</span> <span class="p">)</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Models</h1></header>
+            
+            
+            <section><ul>
+<li>Each model is a Python class that subclasses django.db.models.Model</li>
+<li>Each attribute of the model represents a database field<div class="highlight"><pre><span class="lineno">1</span> <span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+<span class="lineno">4</span>     <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span>
+<span class="lineno">5</span>     <span class="n">release_date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">()</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Django ORM</h1></header>
+            
+            
+            <section><ul>
+<li>Using ORM<div class="highlight"><pre><span class="lineno"> 1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">Book</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">&#39;How to Avoid Huge Ships.&#39;</span><span class="p">)</span>
+<span class="lineno"> 2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="lineno"> 3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">Book</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">foo</span><span class="p">)</span>
+<span class="lineno"> 4</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">Book</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="lineno"> 5</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">Book</span><span class="p">:</span> <span class="n">Book</span> <span class="nb">object</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Book</span><span class="p">:</span> <span class="n">Book</span> <span class="nb">object</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">Book</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="lineno"> 8</span> <span class="o">&lt;</span><span class="n">Book</span><span class="p">:</span> <span class="n">Book</span> <span class="nb">object</span><span class="o">&gt;</span>
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">Book</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">title__contains</span><span class="o">=</span><span class="s">&#39;query&#39;</span><span class="p">)</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Security - SQL Injection</h1></header>
+            
+            
+            <section><ul>
+<li>By using the Django ORM you get protection from SQL Injection for free!</li>
+<li>Values sent to the ORM are escaped based on your database backend</li>
+<li>You can execute raw SQL if you need to<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">Book</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">raw</span><span class="p">(</span><span class="s">&#39;SELECT * FROM myapp_book&#39;</span><span class="p">)</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>View Functions</h1></header>
+            
+            
+            <section><ul>
+<li>A view is a Python function that takes a Web request and returns a Web response<div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">my_view</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<span class="lineno">2</span>     <span class="c"># ...</span>
+<span class="lineno">3</span>     <span class="k">if</span> <span class="n">foo</span><span class="p">:</span>
+<span class="lineno">4</span>         <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s">&#39;&lt;h1&gt;Page found!&lt;/h1&gt;&#39;</span><span class="p">)</span>
+<span class="lineno">5</span>     <span class="k">else</span><span class="p">:</span>
+<span class="lineno">6</span>         <span class="k">return</span> <span class="n">HttpResponseNotFound</span><span class="p">(</span><span class="s">&#39;&lt;h1&gt;Page not found&lt;/h1&gt;&#39;</span><span class="p">)</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>View Functions</h1></header>
+            
+            
+            <section><ul>
+<li>Views define which data you see, not how you see it<div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">book_detail</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">book_id</span><span class="p">):</span>
+<span class="lineno">2</span>     <span class="k">try</span><span class="p">:</span>
+<span class="lineno">3</span>         <span class="n">p</span> <span class="o">=</span> <span class="n">Book</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">book_id</span><span class="p">)</span>
+<span class="lineno">4</span>     <span class="k">except</span> <span class="n">Book</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+<span class="lineno">5</span>         <span class="k">raise</span> <span class="n">Http404</span>
+<span class="lineno">6</span>     <span class="k">return</span> <span class="n">render_to_response</span><span class="p">(</span><span class="s">&#39;detail.html&#39;</span><span class="p">,</span> 
+<span class="lineno">7</span>                               <span class="p">{</span><span class="s">&#39;book&#39;</span><span class="p">:</span> <span class="n">b</span><span class="p">})</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Templates</h1></header>
+            
+            
+            <section><ul>
+<li>Django’s template engine provides a powerful mini-language for defining the user-facing layer of your application<div class="highlight"><pre><span class="lineno"> 1</span> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="lineno"> 2</span> <span class="nt">&lt;html&gt;</span>
+<span class="lineno"> 3</span> <span class="nt">&lt;head&gt;</span>
+<span class="lineno"> 4</span>     <span class="nt">&lt;title&gt;</span>Future time<span class="nt">&lt;/title&gt;</span>
+<span class="lineno"> 5</span> <span class="nt">&lt;/head&gt;</span>
+<span class="lineno"> 6</span> <span class="nt">&lt;body&gt;</span>
+<span class="lineno"> 7</span>     <span class="nt">&lt;h1&gt;</span>{{ book.title }}<span class="nt">&lt;/h1&gt;</span>
+<span class="lineno"> 8</span>     <span class="nt">&lt;p&gt;</span>Released on  {{ book.release_date }}.<span class="nt">&lt;/p&gt;</span>
+<span class="lineno"> 9</span> <span class="nt">&lt;/body&gt;</span>
+<span class="lineno">10</span> <span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+<p>Not limited to HTML</p>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Templates</h1></header>
+            
+            
+            <section><ul>
+<li>Templates are reusable<div class="highlight"><pre><span class="lineno">1</span> <span class="p">{</span><span class="o">%</span> <span class="n">extends</span> <span class="s">&quot;base.html&quot;</span> <span class="o">%</span><span class="p">}</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="p">{</span><span class="o">%</span> <span class="n">block</span> <span class="n">title</span> <span class="o">%</span><span class="p">}</span>
+<span class="lineno">4</span> <span class="n">The</span> <span class="n">current</span> <span class="n">time</span>
+<span class="lineno">5</span> <span class="p">{</span><span class="o">%</span> <span class="n">endblock</span> <span class="o">%</span><span class="p">}</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span> <span class="p">{</span><span class="o">%</span> <span class="n">block</span> <span class="n">content</span> <span class="o">%</span><span class="p">}</span> 
+<span class="lineno">8</span> <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">It</span> <span class="ow">is</span> <span class="n">now</span> <span class="p">{{</span> <span class="n">current_date</span> <span class="p">}}</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span> 
+<span class="lineno">9</span> <span class="p">{</span><span class="o">%</span> <span class="n">endblock</span> <span class="o">%</span><span class="p">}</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Security - Cross Site Scripting (XSS)</h1></header>
+            
+            
+            <section><ul>
+<li>All variables output by the template engine are escaped </li>
+<li>Django provides a ‘safe’ filter to bypass protection if you need to<div class="highlight"><pre><span class="lineno">1</span> <span class="p">{{</span> <span class="n">name</span><span class="o">|</span><span class="n">safe</span> <span class="p">}}</span>
+</pre></div>
+
+</li>
+</ul>
+<p><img alt="XSS" src="http://i.imgur.com/iJ3Er.jpg" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Security - Cross Site Request Forgery</h1></header>
+            
+            
+            <section><ul>
+<li>Easy to use</li>
+<li>Not on by default</li>
+<li>
+<p>Add the middleware</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="s">&#39;django.middleware.csrf.CsrfViewMiddleware&#39;</span>
+</pre></div>
+
+</li>
+<li>
+<p>In any template that uses a POST form use </p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&lt;</span><span class="n">form</span> <span class="n">action</span><span class="o">=</span><span class="s">&quot;.&quot;</span> <span class="n">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="o">&gt;</span>
+<span class="lineno">2</span>     <span class="p">{</span><span class="o">%</span> <span class="n">csrf_token</span> <span class="o">%</span><span class="p">}</span>
+</pre></div>
+
+</li>
+<li>
+<p>In the corresponding view functions, ensure that the csrf context processor is being used.  One way of doing this is using RequestContext</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">view</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<span class="lineno">2</span>     <span class="c">#...</span>
+<span class="lineno">3</span>     <span class="k">return</span> <span class="n">render_to_response</span><span class="p">(</span><span class="s">&#39;book.html&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;book&#39;</span><span class="p">:</span> <span class="n">book</span><span class="p">},</span>
+<span class="lineno">4</span>                             <span class="n">context_instance</span><span class="o">=</span><span class="n">RequestContext</span><span class="p">(</span><span class="n">request</span><span class="p">))</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Questions?</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide1">Alamo City Python Group Intro&nbsp;to&nbsp;Django</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide2">About Me</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Web Development</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Django</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Django</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Request Handling</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Request Handling</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide8">URLConf</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Models</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Django ORM</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Security - SQL Injection</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide12">View Functions</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">View Functions</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Templates</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide15">Templates</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Security - Cross Site Scripting (XSS)</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">Security - Cross Site Request Forgery</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide18">Questions?</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Full screen slides</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide slide context</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>
