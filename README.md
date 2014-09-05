@@ -3,6 +3,10 @@ speaking
 
 Slide decks for talks I've done.
 
+* Snake Charming with pyenv
+    - September 4, 2014
+    - Slides: http://dmend.github.io/speaking/snake_charming/presentation.html
+
 * Django Zero to Hero
     - August 20, 2014 at San Antonio PyLadies
     - Slides: http://dmend.github.io/speaking/django_zero_to_hero/presentation.html
