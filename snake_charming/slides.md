@@ -6,11 +6,15 @@
 
 ## Douglas Mendizábal
 
+* OpenStack Developer at Rackspace
+
+    * OpenStack Barbican - http://github.com/openstack/barbican
+
+* IRC - redrobot on Freenode
+
+* Twitter - @elrobotrojo
+
 * GitHub - http://github.com/dmend
-
-* Software Developer at Rackspace
-
-* OpenStack Barbican - http://github.com/openstack/barbican
 
 ---
 
@@ -24,10 +28,8 @@
 
 ## Python the language
 
-
     !python
     print("Hello World! \U0001F37A")
-
 
 ## Python the software
 
@@ -88,8 +90,8 @@ Software
 
 * Python written in Python
 * FAST! - Faster than CPython
-* PyPy 2.3.1
-* PyPy3 2.3.1
+* PyPy 2.4.0 (Python 2.7)
+* PyPy3 2.3.1 (Python 3.2)
 
 ---
 
@@ -125,7 +127,10 @@ Software
 # pyenv
 
 * Fork of rbenv maintained by Yuu Yamashita
-    - [https://github.com/yyuu/pyenv](https://github.com/yyuu/pyenv)
+
+![Yuu](yuu.png)
+
+* [https://github.com/yyuu/pyenv](https://github.com/yyuu/pyenv)
 * Uses __shims__ to manage many versions of different interpreters
 * Lets you change the global Python version on a per-user basis
 * Provides support for per-project Python versions
@@ -156,10 +161,9 @@ Software
 
 # I got my (re)hash pipe
 
-pyenv does not automatically create shims for every executable
+pyenv does not automatically create shims for new executables after installation
 
-    !bash
-    pyenv rehash
+# pyenv rehash
 
 ---
 
