@@ -2,10 +2,19 @@ speaking
 ========
 
 Slide decks for talks I've done.
+
+* Intro to GPG adn the Web of Trust
+    - October 23, 2014 at LASCON 2014
+    - Slides: http://dmend.github.io/speaking/intro_gpg/presentation.html
+
 * Snake Charming with pyenv
     - October 4, 2014 at PyTexas 2014
     - Slides: http://dmend.github.io/speaking/snake_charming/presentation.html
     - Video: http://pyvideo.org/video/3181/snake-charming-with-pyenv
+
+* Django Unchained
+    - October 3, 2014 at PyTexas 2014
+    - Slides: http://dmend.github.io/speaking/django_unchained/presentation.html
 
 * Snake Charming with pyenv
     - September 4, 2014
