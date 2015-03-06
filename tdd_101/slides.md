@@ -125,6 +125,6 @@ tests
 
 - [UnitTest - Martin Fowler](http://martinfowler.com/bliki/UnitTest.html)
 
-- [Xunit - Martin Fowler](http://martinfowler.com/bliki/UnitTest.html)
+- [Xunit - Martin Fowler](http://martinfowler.com/bliki/Xunit.html)
 
 - [codekata.com](http://codekata.com/)
