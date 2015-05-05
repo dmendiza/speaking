@@ -14,6 +14,18 @@
 
 ---
 
+# History PGP
+
+- Pretty Good Privacy (PGP)
+    - Phil Zimmerman, 1991
+    - SB 266
+- OpenPGP, 1998
+    - [RFC 4880](https://tools.ietf.org/html/rfc4880)
+- GNU Privacy Guard
+    - GnuPG or GPG
+
+---
+
 # Meet Alice and Bob
 
 ![Alice and Bob](alice_bob.png)
@@ -452,7 +464,14 @@ Anyone who has the Public Key can verify the signature
 
 ---
 
-# Summary
+# Criticism
+
+- Awful UX
+- No support for modern crypto
+
+---
+
+# Questions
 
 ![crypto nerds](http://imgs.xkcd.com/comics/security.png)
 
@@ -464,10 +483,3 @@ Anyone who has the Public Key can verify the signature
   by Michael Lucas (No Starch Press)
 - The GNU Privacy Handbook
   [http://www.gnupg.org/gph/en/manual.html](http://www.gnupg.org/gph/en/manual.html)
-
----
-
-# Credits
-
-[1] CC-BY https://www.flickr.com/photos/carlosluzz/561920999
-
