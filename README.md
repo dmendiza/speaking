@@ -3,6 +3,14 @@ speaking
 
 Slide decks and/or videos for talks I've done.
 
+* Intro to GPG and the Trusted Web
+    - August 12, 2015 at Def-Sec: The San Antonio Cyber Security Meetup
+    - Slides: http://dmend.github.io/speaking/intro_gpg/presentation.html
+
+* Stop building insecure systems: Cryptography 101
+    - July 21, 2015 at OSCON
+    - Slides: http://a62f5547c34b8bb07dc5-6e8e6217330bab7365f82aabeb1a8140.r52.cf5.rackcdn.com/Crypto%20Tutorial%2016x9.pdf
+
 * Intro to Flask
     - June 4, 2015 at Alamo City Python Group
     - Slides: http://dmend.github.io/speaking/intro_flask/presentation.html
