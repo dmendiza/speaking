@@ -3,6 +3,15 @@ speaking
 
 Slide decks and/or videos for talks I've done.
 
+* Introduction to Project Barbican
+    - April 14, 2016 at Cloud Technologies meetup San Antonio, TX
+    - Event: https://www.meetup.com/Cloud-Technology/events/229434066/
+    - Video: https://www.youtube.com/watch?v=thwsRKUm5D8
+
+* Introduction to Barbican!
+    - January 21, 2016 at OpenStack Austin Texas
+    - Event: http://www.meetup.com/OpenStack-Austin/events/227830355/
+
 * Intro to GPG and the Trusted Web
     - August 12, 2015 at Def-Sec: The San Antonio Cyber Security Meetup
     - Slides: http://dmend.github.io/speaking/intro_gpg/presentation.html
