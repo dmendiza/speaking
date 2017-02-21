@@ -51,6 +51,7 @@ Slide decks and/or videos for talks I've done.
 * Intro to GPG adn the Web of Trust
     - October 23, 2014 at LASCON 2014
     - Slides: http://dmend.github.io/speaking/intro_gpg/presentation.html
+    - Video: https://vimeo.com/album/3231452/video/115996152
 
 * Snake Charming with pyenv
     - October 4, 2014 at PyTexas 2014
