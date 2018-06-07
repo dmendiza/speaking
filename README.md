@@ -3,6 +3,9 @@ speaking
 
 Slide decks and/or videos for talks I've done.
 
+* Django Unchained
+    * June 7, 2018 at Alamo City Python Group
+
 * Test Driven Development 101
     - February 21, 2017 at Alamo Code Learners
     - Event: https://www.meetup.com/Alamo-Code-Learners/events/237004971/
