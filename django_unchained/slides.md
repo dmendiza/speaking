@@ -193,10 +193,10 @@ Can be extended with __Middleware__
 
 # Installing Django
 
-Latest version 1.7 was released on September 2, 2014
+Latest version 2.0.6 released on June 1, 2018
 
     !bash
-    $ pip install django
+    $ pipenv install django
 
 ---
 
